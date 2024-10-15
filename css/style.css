@@ -1,0 +1,260 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+* {
+  font-family: "Poppins", sans-serif;
+  padding: 0px;
+  margin: 0px;
+  box-sizing: border-box;
+  text-decoration: none;
+  list-style: none;
+}
+header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 33px 9%;
+  z-index: 1000;
+  background: transparent;
+}
+.logo {
+  font-size: 30px;
+  font-weight: 700;
+  color: white;
+}
+.navlist {
+  display: flex;
+}
+.navlist a {
+  color: white;
+  margin-left: 60px;
+  font-size: 15px;
+  font-weight: 600;
+  border-bottom: 2px solid transparent;
+  transition: all 0.55s ease;
+}
+.navlist a:hover {
+  border-bottom: 2px solid #ffffff;
+}
+#menu-icon {
+  color: white;
+  font-size: 30px;
+  z-index: 10001;
+  cursor: pointer;
+  display: none;
+}
+.north {
+  height: 100%;
+  width: 100%;
+  min-height: 100vh;
+  background: linear-gradient(
+    245.59deg,
+    #8f5cbe 0%,
+    #9c4fe4 28.53%,
+    #6807c2 75.52%
+  );
+  position: relative;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  align-items: center;
+  gap: 2rem;
+}
+section {
+  padding: 0 15%;
+}
+.north-text h1 {
+  font-size: 90px;
+  line-height: 1;
+  color: white;
+  margin: 0 0 20px;
+}
+.north-text p {
+  font-size: 15px;
+  color: white;
+  margin-bottom: 40px;
+  line-height: 1.9;
+}
+.north .image {
+  position: relative;
+  width: 50%;
+  height: 50%;
+}
+.north .image1 {
+  position: relative;
+  width: 700px;
+  height: auto;
+  padding-left: 100px;
+}
+.north-text a {
+  display: inline-block;
+  padding: 12px 30px;
+  font-size: 14px;
+  line-height: 1.4;
+  font-weight: 500;
+  background: white;
+  color: #6807c2;
+  font-size: 15px;
+  font-weight: 600;
+  border-radius: 30px;
+  transition: all 0.55s ease;
+  text-transform: uppercase;
+  border: 1px solid transparent;
+}
+.north-text a:hover {
+  background: transparent;
+  border: 1px solid white;
+  color: white;
+  transform: translateX(8px);
+}
+.north-text a .ctaa {
+  background: transparent;
+  border: 1px solid white;
+  margin-left: 20px;
+}
+.north-text a .ctaa i {
+  vertical-align: middle;
+  margin-right: 5px;
+}
+
+.icons {
+  position: absolute;
+  top: 50%;
+  padding: 0 9%;
+  transform: translateY(-50%);
+}
+.icons i {
+  display: block;
+  margin: 26px 0;
+  font-size: 24px;
+  color: white;
+  transition: all 0.5s ease;
+}
+.icons i:hover {
+  color: #f3c4c4;
+  transform: translateY(-5px);
+}
+.scroll-down {
+  position: absolute;
+  bottom: 6%;
+  right: 9%;
+}
+.scroll-down i {
+  display: block;
+  padding: 12px;
+  font-size: 25px;
+  color: #ffffff;
+  background: #c96aee;
+  border-radius: 30px;
+  transition: all 0.5s ease;
+}
+.scroll-down i:hover {
+  transform: translateY(-5px);
+}
+
+
+/*Website Responsive*/
+
+
+@media (max-width: 1535px) {
+  header {
+    padding: 15px 3%;
+    transition: 0.2s;
+  }
+  .icons {
+    padding: 0 3%;
+    transition: 0.2s;
+  }
+  .scroll-down {
+    right: 3%;
+    transition: 0.2s;
+  }
+}
+@media (max-width: 1460px) {
+  section {
+    padding: 0 12%;
+    transition: 0.2s;
+  }
+}
+@media (max-width: 1340px) {
+  .north .image .image1{
+    width: 100%;
+    height: auto;
+  }
+  .north-text h1{
+    font-size: 75px;
+    margin: 0 0 30px;
+  }
+  .ctaa{
+    margin-top: 10px;
+  }
+}
+@media (max-width: 1195px) {
+  section{
+    padding: 0 3%;
+    transition: .2s;
+  }
+  .north-text{
+    padding-top:115px;
+  }
+  .north .image{
+    text-align: center;
+  }
+  .north-image {
+    text-align: center;
+  }
+  .north-image img {
+    width: 560px;
+    height: auto;
+  }
+  .north{
+    height: 100%;
+    gap: 1rem;
+    grid-template-columns: 1fr;
+  }
+  .icons{
+    display: none;
+  }
+  .scroll-down{
+    display: none; 
+  }
+
+}
+@media (max-width: 990px){
+  #menu-icon{
+    display: block;
+  }
+  .navlist{
+    position: absolute;
+    top: 100%;
+    right: 0;
+    width: 250px;
+    height: 35vh;
+    background: #824cb4;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    padding: 50px 20px;
+    transition: all .55s ease;
+  }
+  .navlist a{
+    margin-left: 0;
+    display: block;
+    margin: 7px 0;
+  }
+  .navlist.open{
+    right: 0;
+  }
+  .north-text p{
+    position: relative;
+    margin-right: 300px;
+  }
+}
+@media (max-width: 760px){
+  .north-image img{
+    width: 100%;
+    height: auto;
+  }
+}
