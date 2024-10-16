@@ -1,0 +1,161 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+* {
+  font-family: "Poppins", sans-serif;
+  padding: 0px;
+  margin: 0px;
+  box-sizing: border-box;
+  text-decoration: none;
+  list-style: none;
+}
+.team {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: black;
+}
+.slide-container {
+  max-width: 1120px;
+  width: 100%;
+  padding: 40px 0;
+}
+.slide-content {
+  margin: 0 40px;
+  border-radius: 25px;
+  overflow: hidden;
+}
+.card {
+  border-radius: 25px;
+  background-color: white;
+}
+.image-content,
+.card-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 10px 14px;
+}
+
+.image-content {
+  position: relative;
+  row-gap: 5p;
+  padding: 25px 0;
+}
+.overlay {
+  position: absolute;
+  left: 0;
+  top: 0;
+  height: 100%;
+  width: 100%;
+  background-color: #6807c2;
+  border-radius: 25px 25px 0 25px;
+}
+.overlay::before,
+.overlay::after {
+  content: "";
+  position: absolute;
+  right: 0;
+  bottom: -40px;
+  height: 40px;
+  width: 40px;
+  background-color: #6807c2;
+}
+.overlay::after {
+  border-radius: 0 25px 0 0;
+  background-color: #fff;
+}
+
+.card-image {
+  position: relative;
+  height: 150px;
+  width: 150px;
+  border-radius: 50%;
+  background-color: white;
+  padding: 3px;
+}
+
+.card-image .card-img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  border-radius: 50%;
+  border: 4px solid #6807c2;
+}
+.name {
+  font-size: 18px;
+  font-weight: 500;
+  color: #000000;
+  padding: 10px;
+}
+.description {
+  font-size: 14px;
+  color: rgb(223, 149, 149);
+  text-align: center;
+}
+.button {
+  border: none;
+  font-size: 16px;
+  color: #fff;
+  padding: 8px 16px;
+  background-color: #8f5cbe;
+  margin: 14px;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+.button:hover {
+  background-color: #6807c2;
+}
+
+.swiper-navBtn {
+  color: #6807c2;
+  transition: color 0.3s ease;
+}
+.swiper-navBtn:hover {
+  color: #8f5cbe;
+}
+.swiper-navBtn::before,
+.swiper-navBtn::after {
+  font-size: 40px;
+  transition: color 0.3s ease;
+}
+.swiper-button-next {
+  right: 0;
+}
+.swiper-button-prev {
+  left: 0;
+}
+.swiper-pagination-bullet {
+  color: #6807c2;
+  opacity: 1;
+}
+.swiper-pagination-bullet-active {
+  color: #8f5cbe;
+}
+
+@media screen and (max-width: 768px) {
+  .slide-content {
+    margin: 0 10px;
+  }
+  .card {
+    margin: 0 20px;
+  }
+  .image-content {
+    padding: 15px 0;
+  }
+  .card-image {
+    height: 100px;
+    width: 100px;
+  }
+  .name {
+    font-size: 16px;
+  }
+  .description {
+    font-size: 12px;
+  }
+  .button {
+    font-size: 14px;
+    padding: 6px 12px;
+  }
+}
