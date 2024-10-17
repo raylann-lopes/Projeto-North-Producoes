@@ -7,6 +7,7 @@
   box-sizing: border-box;
   text-decoration: none;
   list-style: none;
+  scroll-behavior: smooth;
 }
 .team {
   min-height: 100vh;
@@ -16,7 +17,6 @@
   background-color: black;
 }
 .slide-container {
-  max-width: 1120px;
   width: 100%;
   padding: 40px 0;
 }
