@@ -113,17 +113,10 @@ section {
 }
 .north-image .image1 {
   position: relative;
-  height: 100%;
+  height: 800px;
   width: auto;
-}
-
-.image1{
-  position: relative;
-  height: 100%;
-  width: auto;
-  background-color: red;
-  background-size:auto;
-  background-size: 300px;
+  transform: translateX(20%);
+  margin-bottom: -152px;
 }
 
 .north-text a {
