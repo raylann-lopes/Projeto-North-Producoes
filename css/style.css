@@ -45,7 +45,12 @@ header {
   align-items: center;
   padding: 33px 9%;
   z-index: 1000;
-  background: transparent;
+}
+.image-logo img{
+
+  width:100px;
+  height: auto;
+
 }
 .logo {
   font-size: 30px;
@@ -53,15 +58,32 @@ header {
   color: white;
 }
 .navlist {
-  display: flex;
+  height: 50px;
+  display: inline-block; 
+  top: 0; /* Stay on top */
+  width: 100%; /* Full width */
 }
+
+#navlist {
+  margin-top: 50px;
+  height: 50px;
+  display: flex;
+  position: fixed;
+  top: 0; 
+  transition: top 0.3s; /* Transition effect when sliding down (and up) */
+}
+
+
 .navlist a {
+  display: inline-block;
+  right: 0;
   color: white;
   margin-left: 60px;
   font-size: 15px;
   font-weight: 600;
   border-bottom: 2px solid transparent;
   transition: all 0.55s ease;
+  
 }
 .navlist a:hover {
   border-bottom: 2px solid #ffffff;

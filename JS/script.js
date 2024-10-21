@@ -1,3 +1,17 @@
+
+/* Hide NavBar on Scroll */
+
+var prevScrollpos = window.scrollY;
+window.onscroll = function() {
+  var currentScrollPos = window.scrollY;
+  if (prevScrollpos > currentScrollPos) {
+    document.getElementById('navlist').style.top = "0";
+  } else {
+    document.getElementById('navlist').style.top = "-100px";
+  }
+  prevScrollpos = currentScrollPos;
+}
+
 /*Script Home Page*/
 
 let menu = document.querySelector("#menu-icon");
